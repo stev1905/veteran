@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=IM+Fell+French+Canon);
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+
+$body-bg: 						#181818;
+$font-family-sans-serif:		'IM Fell French Canon', Helvetica, Arial, San-serif;
+$navbar-default-bg: 			white;
+$navbar-default-brand-color: 	#ecf0f1;
+$brand-primary: 				#f39c12;
+$jumbotron-bg: 					#ecf0f1;
+
+@import 'bootstrap';
+
+.item img { 
+	display: block; 
+	width: 750px; 
+	height: 475px; 
+	box-shadow: none;
+	
+} 
+.item2 img { 
+	float: left;
+    width: 250px;
+    height: 170px;
+} 
+
+#inside-border{
+	background-color: 		#D2D7D3;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#grad {
+  width: 1000px;
+  background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, white, grey, grey); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, white, grey,grey); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, white,grey,grey); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, white,grey,grey); /* Standard syntax */
+}
+
+#navi {
+	width: 100%;
+	margin: 0;
+	padding-right: 0; 
+	padding-right: 0;
+}
+.navbar-default {
+    background-color: transparent;
+    color: grey;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    font-size: 16px;
+}
+h1{
+	color:grey;
+	font-family: "Times New Roman", Times, serif;
+}
+.vertical-divider{
+	clear: both;
+	position: relative;
+}
+
+.vertical-divider:after {
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.vertical-divider .column:not(:first-child):after, .vertical-divider .columns:not(:first-child):after{
+	background: #DDDDDD;
+	bottom: 0;
+	content: " ";
+	margin-left: -10px;
+	position: absolute;
+	top: 0;
+	width: 1px;
+}
+
+/* Very simple grid for example */
+.container { position: relative; width: 960px; margin: 20px auto; padding: 0; }
+
+.container .column, .container .columns { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+
+.container .one-third.column { width: 300px; }
+
+.container .two-thirds.column { width: 500px;     font-family: "Times New Roman", Times, serif;}

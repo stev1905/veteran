@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Veterans Site</title>
+</head>
+<body>
+<div class="container" id="grad">
+<div class="item2"> <%=image_tag("SmallLogo.jpg", alt: "test")%> </div> 
+<h1 text align="center">Veterans App</h1>
+<br><br>
+<nav class="navbar navbar-default navbar-static-top">
+<div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Mission Statement</a></li>
+        <li><a href="#">Links</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Donate Here <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<ul class="bxslider">
+  <div class="item"><%=image_tag("test4.jpg", title:"Caption 1")%></div>
+  <div class="item"><%=image_tag("test6.jpg", title:"Caption 2")%></div>
+</ul>
+
+<div class="container vertical-divider">
+  <div class="column two-third">
+    <h2>Our Mission Statement</h2>
+    <p>Eliminate homeless among all American veterans.</p>
+<p>Vision Statement:</p>
+<p>We envision that every veteran will have a safe place to call home.</p>
+<p>Valve Statement:</p>
+<p>Faith in Jesus Christ;</p>
+<p>Commitment to the public good;</p>
+<p>Respect for the worth and dignity of all individuals;</p>
+<p>Transparency, integrity, and honesty;</p>
+<p>Commitment to excellence and maintaining the public trust.</p>
+
+<p>"Love for the Word and your brother are the only things that will set true Christians </p>
+<p>apart from the world."</p>
+<p>J. Watlington</p>
+  </div>
+  <div class="column two-third">
+    <h2>Donate Here</h2>
+   <p><a href="/blog" type="button" class="btn btn-primary">Donate Now</a></p>
+  </div>
+ </div>
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+	mode: 'fade',
+	captions: true,
+	slideWidth: 700,
+	controls: false,
+	slideLength: 850,
+	pause: 3000,
+	auto:true,
+	useCSS:false,
+	startSlide: 0,
+	timeout: 0,
+  		});
+});
+</script>
+
+</body>
+</html>
+
