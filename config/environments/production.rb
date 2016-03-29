@@ -79,4 +79,6 @@ Rails.application.configure do
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 config.assets.precompile += %w( bx_loader.gif controls.png )
+
+config.serve_static_assets = true
 end
