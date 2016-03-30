@@ -85,5 +85,6 @@ config.assets.precompile += %w( bx_loader.gif controls.png )
 
 config.serve_static_assets = true
 
+config.assets.debug = true 
 
 end
