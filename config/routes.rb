@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   root "pages#home"
   get "/blog" => redirect("http://www.paypal.com")
-
+  get "/facebook" => redirect("http://www.facebook.com")
+  get "/flickr" => redirect("http://www.flickr.com")
+  get "/youtube" => redirect("http://www.youtube.com")
+  get "/goldstar" => redirect("http://www.guidestar.org/profile/45-3175694")
+  get "/heroes" => redirect("http://www.voiceamerica.com/episode/89859/support-homeless-veterans-inc")
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

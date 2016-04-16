@@ -2,60 +2,110 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+.nav{
+    background-color: transparent;
+    //font-family: "Times New Roman", Times, serif;
+    margin: 2px;
+    font-size: 16px;
+    font-weight: bold;
 
-$body-bg: 						#181818;
-$font-family-sans-serif:		'IM Fell French Canon', Helvetica, Arial, San-serif;
-$navbar-default-bg: 			white;
-$navbar-default-brand-color: 	#ecf0f1;
-$brand-primary: 				#f39c12;
-$jumbotron-bg: 					#ecf0f1;
+} 
 
-@import 'bootstrap';
 
 .item img { 
-	display: block; 
-	width: 750px; 
-	height: 475px; 
+	border: none;
+	width: 950px; 
 	box-shadow: none;
+	height: 320px; 
 	
 } 
-.item2 img { 
+
+.bx-wrapper{ 
+	border: none !important;
+	 -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+	//top: -5px;
+	//border-left-width: -5px;
+	//border-right-width: -0px;	
+}
+.bx-slider{
+	border: none;
+	max-width: 950px; 
+	height: 320px; 
+}
+.bx-viewport{
+	border: none;
+	 -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+	width: 950px;
+	height: 300px;
+    overflow: hidden;
+    position: relative;
+    //top: -5px;
+
+}
+
+body {
+  background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(black, grey, grey); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, grey, grey); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, grey, grey); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, grey,grey); /* Standard syntax */
+}
+
+
+.image2 img { 
 	padding-left: 10px;
 	float: left;
-    width: 250px;
-    height: 175px;
+    width: 190px;
+    height: 135px;
+} 
+.image3 img { 
+	padding-left: 12px;
+	float: left;
+    width: 45px;
+    height: 30px;
 } 
 
-#inside-border{
-	background-color: 		#D2D7D3;
-	padding-left: 10px;
-	padding-right: 10px;
-}
 #grad {
-  width: 1000px;
-  background: white; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(white, white, grey, grey); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(white, white, grey,grey); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(white, white,grey,grey); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(white, white,grey,grey); /* Standard syntax */
+  width: 950px;
+  background: black; /* For browsers that do not support gradients */
 }
 
-#navi {
-	width: 100%;
-	margin: 0;
-	padding-right: 0; 
-	padding-right: 0;
+#title {
+	color: white;
+    padding: 0px 20px 30px 65px;
+    height: 170px;
+    width: 540px;
+    float: left;
 }
-.navbar-default {
-    background-color: transparent;
-    color: grey;
-    font-family: "Times New Roman", Times, serif;
-    margin: 0;
-    font-size: 16px;
+
+#right{
+	color: white;
+    padding: 0px 20px 30px 25px;
+    float: right;
+    height: 170px;
+    width: 200px;
+    text-align: center;
 }
-h1{
-	color:grey;
-	font-family: "Times New Roman", Times, serif;
+
+h2{
+	color:white;
+	font-weight:bold;
+}
+h3{
+	color:white;
+	font-weight:bold;
+}
+h4{
+	color:white;
+	font-weight:bold;
+}
+
+p{
+	color:white;
 }
 .vertical-divider{
 	clear: both;
@@ -74,10 +124,77 @@ h1{
 	background: #DDDDDD;
 	bottom: 0;
 	content: " ";
-	margin-left: -10px;
+	margin-left: -5px;
 	position: absolute;
 	top: 0;
 	width: 1px;
+}
+
+hr.style1{
+	border-top: 1px solid #8c8b8b;
+	width: 95%;
+}
+.nav ul {
+    //*zoom:1;
+    list-style:none;
+    margin:2px;
+    padding:0;
+    background:black;
+}
+.nav ul:before,.nav ul:after {
+    //content:"";
+    //display:table;
+}
+.nav ul:after {
+   // clear:both;
+}
+.nav ul > li {
+    float:left;
+    position:relative;
+}
+.nav a {
+    display:block;
+    padding:10px 20px;
+    line-height:1.2em;
+    color:#fff;
+    //border-left:1px solid #595959;
+}
+.nav a:hover {
+    text-decoration:none;
+    background:#595959;
+
+}
+.nav li ul {
+    background:black;
+}
+.nav li ul li {
+    width:240px;
+}
+.nav li ul a {
+    border: 2px;
+    border-color: white;
+}
+.nav li ul a:hover {
+    background:grey;
+}
+
+.nav li ul {
+    position:absolute;
+    left:0;
+    top:45px;
+    z-index:1;
+}
+.nav li ul li {
+    overflow:hidden;
+    height:0;
+    -webkit-transition:height 200ms ease-in;
+    -moz-transition:height 200ms ease-in;
+    -o-transition:height 200ms ease-in;
+    transition:height 200ms ease-in;
+}
+.nav ul > li:hover ul li {
+    height:45px;
+   color: white;
 }
 
 /* Very simple grid for example */
@@ -88,3 +205,4 @@ h1{
 .container .one-third.column { width: 300px; }
 
 .container .two-thirds.column { width: 500px;     font-family: "Times New Roman", Times, serif;}
+

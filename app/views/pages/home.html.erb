@@ -6,64 +6,122 @@
 </head>
 <body>
 <div class="container" id="grad">
-<div class="item2"> <%=image_tag("SmallLogo.jpg", alt: "test")%> </div> 
-<h1 text align="center">[Webpage Header]</h1>
+<div class="image2"> <%=image_tag("SmallLogo.jpg", alt: "test")%> </div> 
+<div id="title">
+<h3>SUPPORT HOMELESS VETERANS, INC.</h3>
+<p>Advancing Veteran Housing</p>
+</div>
+<div id="right">
+<h3>CONNECT WITH SHV</h3>
+<div class="image3"><a href="/facebook"><%=image_tag("facebook.png", alt: "test")%></a></div>
+<div class="image3"><a href="/flickr"><%=image_tag("flickr.png", alt: "test")%></a></div>
+<div class="image3"><a href="/youtube"><%=image_tag("youtube.png", alt: "test")%></a></div>
+</div>
 <br><br><br>
-<nav class="navbar navbar-default navbar-static-top">
-<div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Mission Statement</a></li>
-        <li><a href="#">Links</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Donate Here <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
+<nav class="nav">
+    <ul>
+        <li>
+            <a href="#">HOME</a>
         </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+        <li>
+            <a href="#">WHO ARE WE</a>
+            <ul>
+                <li><a href="#">ABOUT SHV</a></li>
+                <li><a href="#">LEADERSHIP</a></li>
+                <li><a href="#">STATISTICS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">NEWS</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">WHAT WE DO</a>
+            <ul>
+                <li><a href="#">VETERAN HOUSING</a></li>
+                <li><a href="#">CODE:RED WHITE AND BLUE</a></li>
+                <li><a href="#">COMMUNITY PROGRAMS</a></li>
+                 <li><a href="#">VETERAN LIFELINES</a></li>
+                <li><a href="#">PHILADELPHIA VET FEST</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">HOW TO HELP</a>
+            <ul>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">DONATE</a></li>
+                <li><a href="#">VOLUNTEER</a></li>
+                <li><a href="#">SPONSORS & PARTNERS</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">RESOURCES</a>
+            <ul>
+                <li><a href="#">DIRECTORY</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">EVENTS</a>
+            <ul>
+                <li><a href="#">CALENDAR</a></li>
+            </ul>
+        </li>
+    </ul>
 </nav>
-<ul class="bxslider">
-  <div class="item"><%=image_tag("test4.jpg", title:"Caption 1")%></div>
-  <div class="item"><%=image_tag("test6.jpg", title:"Caption 2")%></div>
-</ul>
+	<ul class="bxslider">
+  		<li class="item"><%=image_tag("test4.jpg", title:"Caption 1")%></li>
+  		<li class="item"><%=image_tag("test6.jpg", title:"Caption 2")%></li>
+	</ul>
 
 <div class="container vertical-divider">
   <div class="column two-third">
     <h2>Our Mission Statement</h2>
-    <p>Eliminate homeless among all American veterans.</p>
-<p>Vision Statement:</p>
-<p>We envision that every veteran will have a safe place to call home.</p>
-<p>Valve Statement:</p>
-<p>Faith in Jesus Christ;</p>
-<p>Commitment to the public good;</p>
-<p>Respect for the worth and dignity of all individuals;</p>
-<p>Transparency, integrity, and honesty;</p>
-<p>Commitment to excellence and maintaining the public trust.</p>
-
-<p>"Love for the Word and your brother are the only things that will set true Christians </p>
-<p>apart from the world."</p>
-<p>--J. Watlington</p>
+<br>
+<p>Eliminate homeless among all American veterans.<br>
+<u><b>Vision Statement:</b></u><br>
+We envision that every veteran will have a safe place to call home.<br><br>
+<u><b>Valve Statement:</b></u><br>
+Faith in Jesus Christ;<br>
+Commitment to the public good;<br>
+Respect for the worth and dignity of all individuals;<br>
+Transparency, integrity, and honesty;<br>
+Commitment to excellence and maintaining the public trust.</p>
+<a href="/goldstar"><%=image_tag("goldstar.png", alt: "test")%></a>
   </div>
   <div class="column two-third">
-    <h2>Donate Here</h2>
-   <p><a href="/blog" type="button" class="btn btn-primary">Donate Now</a></p>
+    <h2>Donate</h2>
+<p><h3>This organization is fully funded by<br>
+donations</h3></p>
+<p>Help us continue to Support Homeless Veterans by<br>
+donating to Support Homeless Veterans, Inc. via check,<br>
+cash, or through PayPal. We are a 501(c)(3) non-profit<br>
+organization and depend on your support to operate.</p>
+<p><a href="/blog" type="button" class="btn btn-primary">Donate Now</a></p>
+<p>You can also donate through the United Way Donor Choice<br>
+Program or Combined Federal Campaign, and designate all<br>
+or a portion of your donation to SHV. Please send your<br>
+donation to <font color="red">United Way #50813"</font> or <font color="red">CFC (Combined Federal Campaign)<br>
+# 15426"</font> to make sure your gift will be sent to our office.</p>
+
+ </div>
+ </div>
+<hr class="style1">
+<div class="container vertical-divider">
+  <div class="column two-third">
+    <h2>FACEBOOK FEED</h2>
+
+
+  </div>
+  <div class="column two-third">
+    <h2>FEATURED AUDIO</h2>
+    <p><h4>American Heroes</h4>
+    <h4>Network |</h4>
+    <h4>VoiceAmerica™</h4></p>
+    <font color="blue"><u><a href="/heroes">Gary Ray speaks with Cara Colantuono</a></u></font><br>
+    <a href="/heroes"><%=image_tag("heroes.png", alt: "test")%></a>
+
+ </div>
+ <div class="column two-third">
+    <h2>FEATURED VIDEO</h2>
+
   </div>
  </div>
 <script type="text/javascript">
@@ -72,9 +130,9 @@ $(document).ready(function(){
   $('.bxslider').bxSlider({
 	mode: 'fade',
 	captions: true,
-	slideWidth: 700,
+	slideWidth: 950,
 	controls: false,
-	slideLength: 850,
+	slideLength: 320,
 	pause: 3000,
 	auto:true,
 	useCSS:false,
