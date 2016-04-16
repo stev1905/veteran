@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root "pages#home"
-  get "/about" => "pages#about"
+  get "about" => "pages#about"
   get "/blog" => redirect("http://www.paypal.com")
   get "/facebook" => redirect("http://www.facebook.com")
   get "/flickr" => redirect("http://www.flickr.com")
