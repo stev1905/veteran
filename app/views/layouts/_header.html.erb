@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Veterans Site</title>
+</head>
+<body>
+<div class="container" id="grad">
+<div class="image2"> <%=image_tag("SmallLogo.jpg", alt: "test")%> </div> 
+<div id="title">
+<h3>SUPPORT HOMELESS VETERANS, INC.</h3>
+<p>Advancing Veteran Housing</p>
+</div>
+<div id="right">
+<h3>CONNECT WITH SHV</h3>
+<div class="image3"><a href="/facebook"><%=image_tag("facebook.png", alt: "test")%></a></div>
+<div class="image3"><a href="/flickr"><%=image_tag("flickr.png", alt: "test")%></a></div>
+<div class="image3"><a href="/youtube"><%=image_tag("youtube.png", alt: "test")%></a></div>
+</div>
+<br><br><br>
+<nav class="nav">
+    <ul>
+        <li>
+            <a href="#">HOME</a>
+        </li>
+        <li>
+            <a href="#">WHO ARE WE</a>
+            <ul>
+                <li><a href="/about"></li>
+                <li><a href="#">LEADERSHIP</a></li>
+                <li><a href="#">STATISTICS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">NEWS</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">WHAT WE DO</a>
+            <ul>
+                <li><a href="#">VETERAN HOUSING</a></li>
+                <li><a href="#">CODE:RED WHITE AND BLUE</a></li>
+                <li><a href="#">COMMUNITY PROGRAMS</a></li>
+                 <li><a href="#">VETERAN LIFELINES</a></li>
+                <li><a href="#">PHILADELPHIA VET FEST</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">HOW TO HELP</a>
+            <ul>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">DONATE</a></li>
+                <li><a href="#">VOLUNTEER</a></li>
+                <li><a href="#">SPONSORS & PARTNERS</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">RESOURCES</a>
+            <ul>
+                <li><a href="#">DIRECTORY</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">EVENTS</a>
+            <ul>
+                <li><a href="#">CALENDAR</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+  <ul class="bxslider">
+      <li class="item"><%=image_tag("test4.jpg", title:"Caption 1")%></li>
+      <li class="item"><%=image_tag("test6.jpg", title:"Caption 2")%></li>
+  </ul>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+  mode: 'fade',
+  captions: true,
+  slideWidth: 950,
+  pager: false,
+  controls: false,
+  slideLength: 320,
+  pause: 3000,
+  auto:true,
+  useCSS:false,
+  startSlide: 0,
+  timeout: 0,
+      });
+});
+</script>
