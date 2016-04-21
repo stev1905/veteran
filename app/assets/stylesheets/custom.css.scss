@@ -14,9 +14,9 @@
 
 .item img { 
 	border: none;
-	width: 950px; 
+	width: 940px; 
 	box-shadow: none;
-	height: 320px; 
+	height: 350px; 
 	
 } 
 
@@ -59,36 +59,44 @@ body {
 .image2 img { 
 	padding-left: 10px;
 	float: left;
-    width: 190px;
-    height: 135px;
+    width: 180px;
+    height: 125px;
 } 
 .image3 img { 
 	padding-left: 12px;
 	float: left;
     width: 45px;
     height: 30px;
+
 } 
 
 #grad {
-  width: 950px;
+  width: 940px;
   background: black; /* For browsers that do not support gradients */
 }
 
 #title {
 	color: white;
-    padding: 0px 20px 30px 65px;
+    padding: 0px 0px 5px 20px;
     height: 150px;
-    width: 540px;
+    width: 545px;
     float: left;
 }
 
 #right{
 	color: white;
-    padding: 0px 20px 30px 25px;
+    padding: 10px 5px 10px 20px;
     float: right;
-    height: 150px;
-    width: 200px;
-    text-align: center;
+    height: 82px;
+    width: 185px;
+    //text-align: right;
+}
+#connect{
+	color: white;
+    padding: 0px 10px 30px 15px;
+    float: right;
+    height: 68px;
+    width: 185px;
 }
 
 h2{
@@ -98,6 +106,7 @@ h2{
 h3{
 	color:white;
 	font-weight:bold;
+	text-align:center;
 }
 h4{
 	color:white;
