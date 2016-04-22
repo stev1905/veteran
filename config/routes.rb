@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "/goldstar" => redirect("http://www.guidestar.org/profile/45-3175694")
   get "/heroes" => redirect("http://www.voiceamerica.com/episode/89859/support-homeless-veterans-inc")
 
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

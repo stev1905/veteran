@@ -144,16 +144,16 @@ hr.style1{
 	width: 95%;
 }
 .nav ul {
-    //*zoom:1;
+    *zoom:1;
     list-style:none;
     background:black;
 }
 .nav ul:before,.nav ul:after {
-    //content:"";
-    //display:table;
+    content:"";
+    display:table;
 }
 .nav ul:after {
-   // clear:both;
+   clear:both;
 }
 .nav ul > li {
     float:left;
@@ -175,19 +175,21 @@ hr.style1{
     background:black;
 }
 .nav li ul li {
-    width:240px;
+	left: -40px;
+    width:210px;
 }
 .nav li ul a {
-    border: 2px;
+    padding: 10px 5px 10px 5px ;
     border-color: white;
 }
 .nav li ul a:hover {
+	width: 100% !important;
     background:grey;
 }
 
 .nav li ul {
     position:absolute;
-    left:0;
+    left: 0px;
     top:35px;
     z-index:1;
 }
@@ -201,6 +203,7 @@ hr.style1{
 }
 .nav ul > li:hover ul li {
     height:40px;
+    width: 210px;
    color: white;
 }
 
